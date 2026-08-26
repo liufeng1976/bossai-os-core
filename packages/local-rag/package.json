@@ -1,0 +1,18 @@
+{
+  "name": "@bossai/local-rag",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "node --check src/index.js",
+    "typecheck": "node --check src/index.js",
+    "test": "node --test test/local-rag.test.mjs",
+    "lint": "node --check src/index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

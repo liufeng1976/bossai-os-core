@@ -1,0 +1,7 @@
+packages:
+  - "packages/ai-contracts"
+  - "packages/skill-engine"
+  - "packages/workflow-engine"
+  - "packages/file-parser"
+  - "packages/local-rag"
+  - "packages/webhook-security"
