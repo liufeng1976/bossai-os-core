@@ -1,0 +1,52 @@
+{
+  "schema": "bossai.oss-public-export.v1",
+  "project": "bossai-os-core",
+  "license": "AGPL-3.0-or-later",
+  "sourceBaseline": "48374339d66aefb3c64a313e1c8f1f85b63d02c7",
+  "rootFiles": [
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "TRADEMARKS.md",
+    "THIRD_PARTY_NOTICES.md",
+    "OPEN_SOURCE_BOUNDARY.md",
+    "package.json",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "tsconfig.base.json",
+    ".github/workflows/ci.yml",
+    "scripts/verify-open-source-boundary.mjs",
+    "scripts/verify-publication-gate.mjs"
+  ],
+  "packageRoots": [
+    "packages/ai-contracts",
+    "packages/skill-engine",
+    "packages/workflow-engine",
+    "packages/file-parser",
+    "packages/local-rag",
+    "packages/webhook-security"
+  ],
+  "explicitlyExcluded": [
+    "apps",
+    "agents",
+    "agent",
+    "commerce",
+    "connectors",
+    "governance",
+    "harnesses",
+    "third_party",
+    "packages/shared",
+    "packages/ai-gateway",
+    "packages/license-core",
+    "packages/ui",
+    "outputs",
+    "release",
+    "data",
+    "demo-data",
+    "prisma",
+    "production deployment configuration",
+    "customer credentials and secrets"
+  ]
+}
