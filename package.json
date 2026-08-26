@@ -10,7 +10,9 @@
     "build": "pnpm -r build",
     "test": "pnpm --filter @bossai/skill-engine test && pnpm --filter @bossai/workflow-engine test && pnpm --filter @bossai/file-parser test && pnpm --filter @bossai/local-rag test && pnpm --filter @bossai/webhook-security test",
     "typecheck": "pnpm -r typecheck",
-    "lint": "pnpm -r lint"
+    "lint": "pnpm -r lint",
+    "verify:open-source-boundary": "node scripts/verify-open-source-boundary.mjs",
+    "verify:publication": "node scripts/verify-publication-gate.mjs"
   },
   "engines": {
     "node": ">=22"
