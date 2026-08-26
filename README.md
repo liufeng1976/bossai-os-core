@@ -15,6 +15,8 @@ BossAI OS Core is the public developer-infrastructure layer extracted from BossA
 
 BossAI commercial and enterprise capabilities are maintained separately. This repository does not contain billing or points authority, commercial entitlement, enterprise governance, marketplace implementation, industry-specific Agents, customer production connectors, proprietary deployment configuration, or the production BossAI Central AI Gateway implementation.
 
+The public surface is intentionally frozen. See `OPEN_SOURCE_BOUNDARY.md` before proposing any new package or capability for publication.
+
 ## Requirements
 
 - Node.js 22+
