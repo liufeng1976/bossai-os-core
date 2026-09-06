@@ -13,7 +13,9 @@
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
     "verify:open-source-boundary": "node scripts/verify-open-source-boundary.mjs",
-    "verify:publication": "node scripts/verify-publication-gate.mjs"
+    "verify:publication": "node scripts/verify-publication-gate.mjs",
+    "growth:traffic": "node scripts/github-traffic-report.mjs",
+    "growth:traffic:check": "node scripts/github-traffic-report.mjs --self-test"
   },
   "engines": {
     "node": ">=22"
