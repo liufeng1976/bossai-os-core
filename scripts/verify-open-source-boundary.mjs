@@ -6,6 +6,7 @@ const manifestPath = join(root, 'OSS_PUBLIC_EXPORT_MANIFEST.json');
 if (!existsSync(manifestPath)) throw new Error('OSS_PUBLIC_EXPORT_MANIFEST.json is required.');
 
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+const expectedLicense = 'Apache-2.0';
 const expectedPackages = [
   'packages/ai-contracts',
   'packages/skill-engine',
@@ -15,14 +16,31 @@ const expectedPackages = [
   'packages/webhook-security',
 ];
 
+if (manifest.license !== expectedLicense) {
+  throw new Error(`Public manifest license must be ${expectedLicense}; got ${manifest.license}.`);
+}
+
+const rootPackage = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
+if (rootPackage.license !== expectedLicense) {
+  throw new Error(`Root package license must be ${expectedLicense}; got ${rootPackage.license}.`);
+}
+
 const actualPackages = [...manifest.packageRoots].sort();
 const expectedSorted = [...expectedPackages].sort();
 if (JSON.stringify(actualPackages) !== JSON.stringify(expectedSorted)) {
   throw new Error(`Public package boundary changed. Expected ${expectedSorted.join(', ')}; got ${actualPackages.join(', ')}.`);
 }
 
-for (const required of ['OPEN_SOURCE_BOUNDARY.md', 'LICENSE', 'TRADEMARKS.md']) {
+for (const required of ['OPEN_SOURCE_BOUNDARY.md', 'LICENSE', 'LICENSE_HISTORY.md', 'NOTICE', 'TRADEMARKS.md']) {
   if (!manifest.rootFiles.includes(required)) throw new Error(`${required} must be part of the public export manifest.`);
+}
+
+for (const packageRoot of expectedPackages) {
+  const packageJsonPath = join(root, packageRoot, 'package.json');
+  const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
+  if (packageJson.license !== expectedLicense) {
+    throw new Error(`${packageRoot}/package.json license must be ${expectedLicense}; got ${packageJson.license}.`);
+  }
 }
 
 const forbiddenPaths = [
@@ -72,4 +90,4 @@ for (const file of allowedRoots.flatMap(walk)) {
   }
 }
 
-console.log('Open-source boundary verification: PASS');
+console.log('Open-source boundary and Apache-2.0 metadata verification: PASS');

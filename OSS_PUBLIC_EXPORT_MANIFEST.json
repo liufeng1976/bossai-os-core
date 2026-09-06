@@ -1,11 +1,13 @@
 {
   "schema": "bossai.oss-public-export.v1",
   "project": "bossai-os-core",
-  "license": "AGPL-3.0-or-later",
+  "license": "Apache-2.0",
   "sourceBaseline": "48374339d66aefb3c64a313e1c8f1f85b63d02c7",
   "rootFiles": [
     "README.md",
     "LICENSE",
+    "LICENSE_HISTORY.md",
+    "NOTICE",
     "CONTRIBUTING.md",
     "SECURITY.md",
     "CODE_OF_CONDUCT.md",
