@@ -148,6 +148,15 @@ See `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md`.
 
 ## BossAI ecosystem
 
-BossAI OS Core is the open developer layer. BossAI's broader product system is organized around governed AI work and commerce products rather than duplicating runtime authority inside each application.
+BossAI OS Core is the open developer layer. It stays intentionally separate from product-specific UX and commercial authority.
 
-Explore the main BossAI entry point at https://bossaios.com.
+After validating the primitives here, continue with the public BossAI project that matches the next job:
+
+- **Discover and validate demand:** [BossAI Radar Lite](https://github.com/liufeng1976/bossai-radar-lite) — public evidence, opportunity scoring, `BUILD / SELL_SERVICE / WATCH / IGNORE`, and seven-day validation planning.
+- **Turn ecommerce work into governed execution:** [BossAI Ecommerce Manager Skill](https://github.com/liufeng1976/bossai-ecommerce-ai-team-skill) — one customer-facing manager coordinating ecommerce tasks, deliverables, acceptance criteria, and approval-aware workflows.
+- **Produce local AI video on Windows:** [BossAI Video Agent](https://github.com/liufeng1976/bossaios-com-video-agent) — script, authorized voice, talking avatar, subtitles/editing, and export; current public build is a Pilot, not GA.
+- **Evaluate the Douyin/Taobao/QianNiu customer-service demo:** [douyin-taobao-cs](https://github.com/liufeng1976/douyin-taobao-cs) — Community Demo with explicit no-key fallback and no claim of completed production platform API validation.
+
+These links are navigation only. None of these repositories creates a second BossAI runtime, identity, approval, billing, or entitlement authority.
+
+Main BossAI product and commercial entry point: https://bossaios.com.
