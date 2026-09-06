@@ -48,11 +48,50 @@ git clone https://github.com/liufeng1976/bossai-os-core.git
 cd bossai-os-core
 pnpm install
 pnpm build
+pnpm demo
 pnpm test
 pnpm typecheck
 ```
 
-A successful run gives you a validated local baseline for exploring the public packages and integrating them into your own application.
+A successful run gives you a validated local baseline plus an executable governed-workflow example—without requiring a model API key or BossAI commercial services.
+
+## Governed workflow example
+
+`examples/governed-workflow.mjs` demonstrates the core boundary in one runnable file:
+
+```text
+local deterministic demo gateway
+        ↓
+schema-validated Skill output
+        ↓
+WorkflowEngine
+        ↓
+waiting_approval
+        ↓
+human approved
+        ↓
+workflow resumes
+        ↓
+local post-approval record
+```
+
+Run it after `pnpm build`:
+
+```bash
+pnpm demo
+```
+
+The example intentionally uses a deterministic in-memory `AIGatewayClient`. It does **not** call OpenAI, DeepSeek, BossAI Gateway, or any other model/provider; it does **not** send a customer message or perform an external action. The demo Skill is marked `requiresApproval: true`, so the workflow must enter `waiting_approval` before the post-approval node can run.
+
+Expected checkpoints include:
+
+```text
+Draft created. Workflow status: waiting_approval
+No external message has been sent.
+Human approval recorded. Workflow status: completed
+```
+
+This gives developers a concrete reference for injecting their own `AIGatewayClient`, declaring a schema/risk/approval policy, and keeping model output behind an explicit workflow state transition.
 
 ## Architecture rule
 

@@ -8,6 +8,7 @@
   "packageManager": "pnpm@9.15.0",
   "scripts": {
     "build": "pnpm -r build",
+    "demo": "node examples/governed-workflow.mjs",
     "test": "pnpm --filter @bossai/skill-engine test && pnpm --filter @bossai/workflow-engine test && pnpm --filter @bossai/file-parser test && pnpm --filter @bossai/local-rag test && pnpm --filter @bossai/webhook-security test",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",

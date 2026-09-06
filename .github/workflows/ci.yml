@@ -39,6 +39,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Run governed workflow example
+        run: pnpm demo
+
       - name: Test
         run: pnpm test
 
