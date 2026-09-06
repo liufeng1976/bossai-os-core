@@ -3,9 +3,9 @@
 > Open-source building blocks for governed AI applications: **AI contracts, Skills, Workflows, local RAG, file parsing, and webhook security**.
 
 [![GitHub stars](https://img.shields.io/github/stars/liufeng1976/bossai-os-core?style=social)](https://github.com/liufeng1976/bossai-os-core/stargazers)
-[![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
-**BossAI OS Core** is the public developer-infrastructure layer extracted from BossAI OS. It provides reusable primitives for building AI applications with explicit contracts, deterministic workflow boundaries, local retrieval, file parsing, and security checks—without exposing BossAI's commercial control plane.
+**BossAI OS Core** is the permissively licensed public developer-infrastructure layer extracted from BossAI OS. It provides reusable primitives for building AI applications with explicit contracts, deterministic workflow boundaries, local retrieval, file parsing, and security checks—without exposing BossAI's commercial control plane.
 
 - Website: https://bossaios.com
 - Releases: https://github.com/liufeng1976/bossai-os-core/releases
@@ -86,11 +86,17 @@ BossAI commercial and enterprise capabilities are maintained separately. This re
 
 The public surface is intentionally frozen. See `OPEN_SOURCE_BOUNDARY.md` before proposing any new package or capability for publication.
 
+## License
+
+The current post-`v0.1.0` source line is **Apache License 2.0 (`Apache-2.0`)**. This is an OSI-approved permissive open-source license with an express patent grant, subject to its terms.
+
+The historical `v0.1.0` release and repository revisions at or before commit `b17a53db6976b3b7bf17b6d9dfbb9b7ade61756b` were published under **AGPL-3.0-or-later**. Rights already granted for those historical revisions remain governed by AGPL and are not revoked by the current relicensing. See `LICENSE_HISTORY.md`.
+
+BossAI trademarks and branding are not granted by the software license; see `TRADEMARKS.md`. Third-party components remain governed by their own licenses; see `THIRD_PARTY_NOTICES.md`.
+
 ## Project status
 
-This repository is the independent public-core baseline extracted from the BossAI OS codebase. The current public release is available from GitHub Releases.
-
-The project is licensed under **AGPL-3.0-or-later**. Modified versions offered to users over a network are subject to the AGPL source-availability requirements. BossAI trademarks and branding are not granted by the software license; see `TRADEMARKS.md`.
+The repository source line is now `0.2.0` under Apache-2.0. The existing `v0.1.0` GitHub Release remains the historical AGPL release until a later Apache-licensed release is explicitly published.
 
 ## Security
 
