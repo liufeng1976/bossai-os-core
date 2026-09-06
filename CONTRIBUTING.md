@@ -19,4 +19,10 @@ Do not add commercial entitlement, billing or points authority, enterprise-only 
 
 Keep changes focused, include tests for behavior changes, document externally visible contracts, and preserve fail-closed behavior for security- or validation-sensitive code.
 
-By contributing, you represent that you have the right to submit the contribution under the repository's applicable license once that license is formally declared.
+## Contribution license
+
+The current BossAI OS Core source line is licensed under **Apache-2.0**. Unless you explicitly state otherwise in writing when submitting a contribution, you agree that contributions intentionally submitted for inclusion in the current source line may be licensed under Apache-2.0 in accordance with Section 5 of the Apache License 2.0.
+
+You represent that you have the right to submit the contribution and that it does not introduce code or assets under terms incompatible with this repository's license and public-source boundary.
+
+Historical `v0.1.0` and earlier revisions remain governed by their historical AGPL grant; see `LICENSE_HISTORY.md`.
