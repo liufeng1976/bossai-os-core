@@ -8,6 +8,7 @@
 **BossAI OS Core** is the permissively licensed public developer-infrastructure layer extracted from BossAI OS. It provides reusable primitives for building AI applications with explicit contracts, deterministic workflow boundaries, local retrieval, file parsing, and security checks—without exposing BossAI's commercial control plane.
 
 - Website: https://bossaios.com
+- Current Apache-2.0 release: https://github.com/liufeng1976/bossai-os-core/releases/tag/v0.2.0
 - Releases: https://github.com/liufeng1976/bossai-os-core/releases
 - Issues: https://github.com/liufeng1976/bossai-os-core/issues
 
@@ -96,7 +97,7 @@ BossAI trademarks and branding are not granted by the software license; see `TRA
 
 ## Project status
 
-The repository source line is now `0.2.0` under Apache-2.0. The existing `v0.1.0` GitHub Release remains the historical AGPL release until a later Apache-licensed release is explicitly published.
+`v0.2.0` is the current public **Apache-2.0 Source Release**. It contains the enterprise-friendly developer primitives described above and no BossAI commercial control-plane authority. Historical `v0.1.0` remains available under the AGPL rights already granted for that revision.
 
 ## Security
 
