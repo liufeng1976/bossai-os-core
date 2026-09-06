@@ -31,4 +31,4 @@ The following must not be added to this repository without an explicit CEO-level
 
 The public boundary is frozen. Adding a new package or capability requires an explicit documented review proving that the addition is generic infrastructure and does not disclose strategic Runtime, authority, commercial, industry, customer, data, or operational know-how.
 
-AGPL licensing does not make strategic code safe to publish. License choice is a legal layer; source-selection remains the primary protection.
+A permissive license does **not** make strategic code safe to publish. The current Apache-2.0 license is the legal layer for the deliberately selected public core; source selection remains the primary protection. Historical `v0.1.0` and earlier revisions remain governed by their historical AGPL grant as documented in `LICENSE_HISTORY.md`.
